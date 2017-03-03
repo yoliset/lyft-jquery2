@@ -1,0 +1,59 @@
+*{
+    outline: 1px solid red;
+}
+#icon{
+    margin-left: 5px;
+    padding: 15px;
+}
+input{
+    width: 100%;
+    color: white;
+    background-color: navy;
+    padding: 12px 0px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.caja{
+    border: 1px solid black;
+    padding: 0px 0px;
+}
+.cajita 
+{
+	width: 98%;
+	position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+img{
+    width: 50px;
+}
+.i{
+   padding-left: 52px;
+    position: relative;
+    top: -5px;
+    color: teal;
+    font-size: 12px;
+}
+.input-group-addon{
+    background-color: white;
+    border-radius: 18px;
+}
+p{
+    width: 210px;
+}
+.letra{
+    font-size: 15px;
+    color: black;
+    font-family: cursive;
+}
+.letras{
+    position: relative;
+    left: -14px;
+    font-size: 13px;
+}
+a{
+    list-style: none;
+    color: darkgray;
+}

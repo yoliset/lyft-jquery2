@@ -1,0 +1,64 @@
+*{
+    outline: 1px solid red;
+}
+
+input{
+    width: 100%;
+    color: white;
+    background-color: orchid;
+    padding: 12px 0px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+#caja{
+    background-color: darkgray;
+    border-radius: 10px;
+}
+.cajita 
+{
+	width: 98%;
+	position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+img{
+    width: 90px;
+}
+#circulo{
+    width: 8px;
+    text-align: center;
+    margin: 0 auto;
+}
+#circulo1{
+    width: 15px;
+}
+#carro{
+    text-align: center;
+}
+#precio{
+    text-align: center;
+}
+#personal{
+    text-align: center;
+}
+
+#lyft{
+    font-family: cursive;
+    font-size: 16px;
+}
+a{
+    list-style: none;
+    color: cadetblue;
+    font-size: 12px;
+}
+#detalle{
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: 1px solid cadetblue;
+}
+.relleno{
+    border-radius: 12px;
+}

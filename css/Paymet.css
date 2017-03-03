@@ -1,0 +1,35 @@
+
+#
+body {
+    font-family: "Merriweather", serif;
+}
+p, a {
+    font-family: "Open Sans", sans-serif;
+}
+
+/*------------------------------------- HERO  */
+
+input{
+    width: 100%;
+    background-color: dimgrey;
+    color: white;
+    padding: 15px 0px;
+}
+img{
+
+    border-radius: 50px;
+}
+#imagen{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.boton{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.precio{
+    text-align: center;
+    padding-bottom: 100px;
+}
+

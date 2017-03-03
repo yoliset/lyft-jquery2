@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+  <title>Lyft</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Inserta tu código aquí -->
+  <link rel="stylesheet" href="icons/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/Paymet.css">
+  <link rel="stylesheet" href="paises.html">
+</head>
+<body onload="init()">
+<!-- HERO -->
+   <section class="hero">
+            <div class="container-fluid">
+            <div class="row col-md-12">
+                  <div class="col-md-1 col-xs-1">
+                          <a href="index.html"><button id="menu" type="button" class="btn  btn-default">
+                          <span class="glyphicon glyphicon-menu-left"></span>
+                          </button></a>
+                  </div> 
+                  <div class="col-md-11 col-xs-11">
+                          <h2 class="frase text-center"><strong>Payment</strong></h2>
+                  </div>
+                 <hr>
+                    <div id="imagen" class="col-md-12">
+                   <img src="img/chica.jpg" alt="">  
+                   </div> 
+            </div>
+            <div class="boton">
+                 <button type="button" class="btn btn-default">No tip</button>
+                 <button type="button" class="btn btn-danger">$1</button>
+                 <button type="button" class="btn btn-default">$2</button>
+                 <button type="button" class="btn btn-default">$5</button>
+                  <button type="button" class="btn btn-default">Other</button>
+           </div>
+            <form class="form-signup">
+                     <div class="input-group">
+                         <span class=" input-group-addon"><a href="paises.html"><i class="caret"></i></span></a>
+                          <input  type="tel" class="form-control" placeholder="123456789" id="user-number">
+                      </div><br><br>
+            </form>
+            <div class="precio">
+                <h3>$9.00</h3>
+            </div>
+             <input type="button" id="botonn" value="Next">  
+            </div>      
+</section>
+</body>
+<script src="js/contacto.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/paises.js"></script>
+<script src="js/init.js"></script>
+</html>

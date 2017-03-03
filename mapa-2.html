@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+  <title>Lyft</title>
+  <link rel="stylesheet" href="css/ihover.css">
+  <!-- Inserta tu código aquí -->
+  <link rel="stylesheet" href="icons/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/mapa-2.css">
+    <title>Mapas</title>
+</head>
+<body>
+    <div id="map" style="height:550px"></div>
+      <script src="js/mapas.js"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbtyWl05NvDhbN6ZoZWmc1DO4v8oMMR_o&callback=initMap"></script>
+             <div class="cajita">
+               <div class="relleno">
+                <div id="caja" class=" col-md-12 col-xs-12">
+                    <div id="carro" class="col-md-6 col-xs-6"><img src="img/taxi/taxi1.png" alt=""></div>
+                    <div id="lyft" class="col-md-6 col-xs-6">Lyft <br><a>Fast ride 4 seats</a></div>
+                    <div id="personal" class="col-md-6 col-xs-6"><img src="" alt="">Personal <br><a class="a">Payment</a></div>
+                    <div id="precio" class="col-md-6 col-xs-6">$6-12 <br><a>Price estimate</a></div>
+                </div>
+                <div  id="detalle" class="col-md-12 col-xs-12">
+                <div class="col-md-1 col-xs-1"><img  id="circulo1" src="img/azul.png" alt=""></div>
+                <div class="col-md-11 col-xs-11"><p>2300 Harrison St</p></div>
+                <div class="col-md-1  col-xs-1"><img id="circulo"  src="img/rosa.png" alt=""></div>
+                <div class="col-md-11 col-xs-11"><p>Caltrain Station</p></div>
+                </div>
+                </div>
+    <br>
+      <input type="button" id="botonn" value="Set pickup">
+      </div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</html>
