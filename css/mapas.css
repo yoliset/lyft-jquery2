@@ -2,8 +2,9 @@
     outline: 1px solid red;
 }
 #icon{
-    margin-left: 5px;
-    padding: 15px;
+     border-radius: 50%;
+     font-size: 20px;
+     border: 1px solid black;
 }
 input{
     width: 100%;
@@ -13,16 +14,25 @@ input{
     border-radius: 10px;
     margin: 0 auto;
 }
-.caja{
-    border: 1px solid black;
-    padding: 0px 0px;
+#map{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-repeat:no-repeat;
+	clear: both;
+}
+.panel-body {
+    padding: 0px;
+}
+.panel-default {
+    border-radius: 15px;
 }
 .cajita 
 {
 	width: 98%;
 	position: absolute;
     left: 50%;
-    top: 80%;
+    top: 90%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
 }
@@ -44,16 +54,7 @@ p{
     width: 210px;
 }
 .letra{
-    font-size: 15px;
-    color: black;
+    font-size: 14px;
     font-family: cursive;
-}
-.letras{
-    position: relative;
-    left: -14px;
-    font-size: 13px;
-}
-a{
-    list-style: none;
     color: darkgray;
 }

@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
   <title>Lyft</title>
-  <link rel="stylesheet" href="css/ihover.css">
   <!-- Inserta tu código aquí -->
   <link rel="stylesheet" href="icons/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -13,27 +14,41 @@
     <title>Mapas</title>
 </head>
 <body>
-    <div id="map" style="height:550px"></div>
+    <div id="map"></div>
       <script src="js/mapas.js"></script>
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbtyWl05NvDhbN6ZoZWmc1DO4v8oMMR_o&callback=initMap"></script>
+             <div class="icono">
+                 <div class="btn-toolbar" role="toolbar">
+                    <button type="button" class="btn btn-default btn-lg"><a href="mapas.html"> 
+                         <span class="glyphicon glyphicon-arrow-left"></span></a>
+                    </button>
+                </div>
+             </div>
              <div class="cajita">
-               <div class="relleno">
-                <div id="caja" class=" col-md-12 col-xs-12">
-                    <div id="carro" class="col-md-6 col-xs-6"><img src="img/taxi/taxi1.png" alt=""></div>
-                    <div id="lyft" class="col-md-6 col-xs-6">Lyft <br><a>Fast ride 4 seats</a></div>
-                    <div id="personal" class="col-md-6 col-xs-6"><img src="" alt="">Personal <br><a class="a">Payment</a></div>
-                    <div id="precio" class="col-md-6 col-xs-6">$6-12 <br><a>Price estimate</a></div>
-                </div>
-                <div  id="detalle" class="col-md-12 col-xs-12">
-                <div class="col-md-1 col-xs-1"><img  id="circulo1" src="img/azul.png" alt=""></div>
-                <div class="col-md-11 col-xs-11"><p>2300 Harrison St</p></div>
-                <div class="col-md-1  col-xs-1"><img id="circulo"  src="img/rosa.png" alt=""></div>
-                <div class="col-md-11 col-xs-11"><p>Caltrain Station</p></div>
-                </div>
-                </div>
-    <br>
-      <input type="button" id="botonn" value="Set pickup">
-      </div>
+                    <div class="panel panel-default">
+                         <div class="panel-body">
+                                 <div id="carro" class="col-md-5 col-xs-5">
+                                     <img src="img/carrito.png" alt="" width="90px">
+                                 </div>
+                                 <div class="col-md-7 col-xs-7">
+                                     <h4><strong>Lyft</strong></h4><p>Fast ride 4 seats</p>
+                                 </div>
+                                 <div id="personal" class="col-md-6 col-xs-6">
+                                     <img src="img/mastercard.png" alt="" width="55px"><strong>Personal </strong><br><p class="a">Payment</p>
+                                 </div>
+                                 <div id="precio" class="col-md-6 col-xs-6">
+                                      <strong>$6-12</strong><br><p>Price estimate</p>
+                                 </div>
+                         </div>
+                         <ul class="list-group">
+                                 <li class="list-group-item"><img src="img/azul.png" alt="" width="15px">        <h5><strong>2300 Harrison St</strong></h5>
+                                 </li>
+                                 <li class="list-group-item"> <img src="img/rosa.png" alt="" width="9px">        <h5><strong>Caltrain Station</strong></h5>
+                                 </li>
+                         </ul>
+                    </div>
+                    <a href="Paymet.html"><button id="boton">Request Lyft</button></a>
+            </div>
 </body>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>

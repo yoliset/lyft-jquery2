@@ -1,8 +1,5 @@
-*{
-    outline: 1px solid red;
-}
 
-input{
+#boton{
     width: 100%;
     color: white;
     background-color: orchid;
@@ -10,55 +7,59 @@ input{
     border-radius: 10px;
     margin: 0 auto;
 }
-#caja{
-    background-color: darkgray;
-    border-radius: 10px;
+#map{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-repeat:no-repeat;
+	clear: both;
+}
+.panel-body {
+    background-color: #f1f1f3;
+}
+.panel-default {
+    border-color: rgba(187, 180, 180, 0.87);
+    border-radius: 15px;
 }
 .cajita 
 {
-	width: 98%;
+	width: 92%;
 	position: absolute;
     left: 50%;
     top: 80%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
 }
-img{
-    width: 90px;
+.icono 
+{
+	width: 92%;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
-#circulo{
-    width: 8px;
-    text-align: center;
-    margin: 0 auto;
+.btn-toolbar>.btn, .btn-toolbar>.btn-group, .btn-toolbar>.input-group {
+   border-radius: 50%;
 }
-#circulo1{
-    width: 15px;
+p{
+    font-size: 13px;
+    color: darkgray;
 }
 #carro{
     text-align: center;
 }
 #precio{
     text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 #personal{
     text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    border-top: 1px solid  rgba(0, 0, 0, 0.15);
+}
+h5{
+    display: inline-block;
+    padding-left: 12px;
 }
 
-#lyft{
-    font-family: cursive;
-    font-size: 16px;
-}
-a{
-    list-style: none;
-    color: cadetblue;
-    font-size: 12px;
-}
-#detalle{
-    background-color: white;
-    border-radius: 10px;
-    padding-left: 10px;
-    border: 1px solid cadetblue;
-}
-.relleno{
-    border-radius: 12px;
-}
