@@ -19,9 +19,11 @@ input{
 hr{
     border:1px solid rgba(105, 105, 105, 0.31);
 }
-img{
+#driver{
 
     border-radius: 50%;
+    width: 130px;
+    height: 130px;
 }
 #imagen{
     text-align: center;
@@ -36,6 +38,12 @@ img{
     text-align: center;
     padding-bottom: 100px;
 }
+#precio{
+    display: inline-block;
+}
+#dolar{
+    display: inline-block;
+}
 h4{
     position: relative;
     top: 4px;
@@ -45,9 +53,13 @@ h4{
     background-color: #ea0eb3;
     border-color: #fe00c1;
 }
-p{
+#let{
     position: relative;
     top: 4px;
     left: 42px;
 }
-
+#name_driver{
+    color: white;
+    background-color:#f446cd;
+    border-radius: 15px;
+}

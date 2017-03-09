@@ -13,7 +13,7 @@
    <link rel="stylesheet" href="css/mapa-2.css">
     <title>Mapas</title>
 </head>
-<body>
+<body onload="init()">
     <div id="map"></div>
              <div class="icono">
                  <div class="btn-toolbar" role="toolbar">
@@ -29,27 +29,35 @@
                                      <img src="img/carrito.png" alt="" width="90px">
                                  </div>
                                  <div class="col-md-7 col-xs-7">
-                                     <h4><strong>Lyft</strong></h4><p>Fast ride 4 seats</p>
+                                     <h4><strong>Lyft</strong></h4>
+                                     <p>Fast ride 4 seats</p>
                                  </div>
                                  <div id="personal" class="col-md-6 col-xs-6">
-                                     <img src="img/mastercard.png" alt="" width="55px"><strong>Personal </strong><br><p class="a">Payment</p>
+                                     <img src="img/mastercard.png" alt="" width="55px"><strong>Personal </strong><br>
+                                     <p class="a">Payment</p>
                                  </div>
                                  <div id="precio" class="col-md-6 col-xs-6">
-                                      <strong>$6-12</strong><br><p>Price estimate</p>
+                                      <strong>$6-12</strong><br>
+                                      <p>Price estimate</p>
                                  </div>
                          </div>
                          <ul class="list-group">
-                                 <li class="list-group-item"><img src="img/azul.png" alt="" width="15px">        <h5><strong>2300 Harrison St</strong></h5>
+                                 <li class="list-group-item">
+                                     <img src="img/rosa.png" alt="" width="9px">        
+                                     <h5 id="orige"><strong></strong></h5>
                                  </li>
-                                 <li class="list-group-item"> <img src="img/rosa.png" alt="" width="9px">        <h5><strong>Caltrain Station</strong></h5>
+                                 <li class="list-group-item"> 
+                                     <img src="img/azul.png" alt="" width="15px">
+                                     <h5 id="destin"><strong></strong></h5>
                                  </li>
                          </ul>
                     </div>
-                    <a href="Paymet.html"><button id="boton">Request Lyft</button></a>
+                    <button id="boton" style = "font-size:18px"><strong>Request Lyft</strong></button>
             </div>
 <script type="text/javascript" src="js/mapa-2.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbtyWl05NvDhbN6ZoZWmc1DO4v8oMMR_o&callback=initMap"></script>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script src="http://code.jquery.com/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>

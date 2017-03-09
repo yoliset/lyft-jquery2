@@ -48,13 +48,28 @@ function initMap() {
     title: 'Josue',
     icon: "img/car3.png"
   });
-}
 
-function validateList () {
+}
+ $(document).ready();
+
+     function init(){
+     validateList ();
+   }
+    function validateList () {
     var selec_Lista = $("li").on("click");
     if (selec_Lista ==0)
+        list[i].addEventListener("click" , onclick);
        alert("Escoge una opción");
     else {
          window.location.href = 'mapa-2.html';
     }
+    }
+     function onclick(evt){
+       var imagenSrc= $(evt.currentTarget).find('.imagen').attr('src');
+       localStorage.setItem('srcImagen', imagenSrc);
+       var CodigoPais= $(evt.currentTarget).find('.codigo').text();
+       localStorage.setItem('numeroPais', CodigoPais);
 }
+
+
+

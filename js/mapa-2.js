@@ -49,3 +49,24 @@ function initMap() {
     icon: "img/car3.png"
   });
 }
+
+$(document).ready();
+
+function init(){
+     solicitarEstimado();
+   }
+function solicitarEstimado(){
+    $.ajax ({
+        url:"http://clientes.geekadvice.pe/api/estimado",
+     data:{tipo:"1"}
+    }).success(function(_data){
+        console.log(_data.estimado);
+        update(_data);
+    });
+} 
+
+function update(_info){
+   $('#orige').text(_info.origen);
+   $('#destin').text(_info.destino);
+   
+}
