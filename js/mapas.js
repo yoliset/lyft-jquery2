@@ -51,16 +51,7 @@ function initMap() {
 
 }
 
-var list=$('li');
-    for ( var i=0; i < list.length; i++){
-        list[i].addEventListener("click" , onclick);
-    }
-function onclick(evt){
-       var imagenSrc= $(evt.currentTarget).find('.imagen').attr('src');
-       localStorage.setItem('srcImagen', imagenSrc);
-       var Codigo= $(evt.currentTarget).find('.i').text();
-       localStorage.setItem('numero', Codigo);
-}
+
  
 
 
