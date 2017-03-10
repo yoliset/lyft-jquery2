@@ -27,9 +27,13 @@ p, a {
     font-size: 20px;
 }
 
-.buton{
- position: relative;
-    left: 10px;
+#boto{
+    width: 90%;
+    color: white;
+    background-color:#e265ce;
+    padding: 12px 0px;
+    border-radius: 10px;
+    margin: 0 auto;
 }
 .hero p{
     padding-top: 10px;

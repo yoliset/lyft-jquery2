@@ -50,26 +50,18 @@ function initMap() {
   });
 
 }
- $(document).ready();
 
-     function init(){
-     validateList ();
-   }
-    function validateList () {
-    var selec_Lista = $("li").on("click");
-    if (selec_Lista ==0)
+var list=$('li');
+    for ( var i=0; i < list.length; i++){
         list[i].addEventListener("click" , onclick);
-       alert("Escoge una opción");
-    else {
-         window.location.href = 'mapa-2.html';
     }
-    }
-     function onclick(evt){
+function onclick(evt){
        var imagenSrc= $(evt.currentTarget).find('.imagen').attr('src');
        localStorage.setItem('srcImagen', imagenSrc);
-       var CodigoPais= $(evt.currentTarget).find('.codigo').text();
-       localStorage.setItem('numeroPais', CodigoPais);
+       var Codigo= $(evt.currentTarget).find('.i').text();
+       localStorage.setItem('numero', Codigo);
 }
+ 
 
 
 

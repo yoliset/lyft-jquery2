@@ -20,6 +20,7 @@ function solicitarDriver(){
 function update(_info){
    $('#driver').attr('src',_info.conductor.url);
    $('#name_driver').html(_info.conductor.name);
-   $('#precio').text(_info.final);
-   $('#dolar').text(_info.estimado.min);  
+   $('#dolar').html(_info.estimado.moneda);  
+   $('#precio').html(_info.final);  
+    
 }

@@ -23,6 +23,27 @@
     border-color: rgba(187, 180, 180, 0.87);
     border-radius: 15px;
 }
+#lyftt{
+    width: 80px;
+    height: 80px;
+	position: absolute;
+    left:50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+#chica{
+     border-radius: 50%;
+    width: 100px;
+    height: 100px;
+	position: absolute;
+    left:15%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    border-radius: 50%;
+
+}
 .cajita 
 {
 	width: 92%;

@@ -15,6 +15,8 @@
 </head>
 <body>
     <div id="map"></div>
+        <img id="chica" src="img/chica.jpg" alt=""> 
+        <img id="lyftt" src="img/lyft-logo.png" alt=""> 
         <div class="cajita">
             <div class="panel panel-default">
                  <div id="cuadro" class="panel-body">
@@ -28,22 +30,23 @@
                                 <ul id="lista" class="dropdown-menu pull-left">
                                      <li value="0">
                                          <a href="#">
-                                             <img src="img/taxi/taxi1.png" width="70px">   Line <p class="i">Shared 2 riders max <i class="pull-right">3 min</i></p>
+                                             <img  class="imagen" src="img/taxi/taxi1.png" width="70px"> 
+                                             <h5>Lyft<br><small>Fast ride, 4 seats</small></h5><i class="pull-right">3 min</i>
                                          </a>
                                       </li>
                                       <li value="1">
                                          <a href="#">
-                                             <img src="img/taxi/taxi2.png" width="70px"> Lyft <p class="i">4 seats<i class="pull-right">3 min</i></p>
+                                             <img  class="imagen" src="img/taxi/taxi2.png" width="70px"> <p class="i">Lyft <br>4 seats<i class="pull-right">3 min</i></p>
                                          </a>
                                       </li>
                                       <li value="2">
                                          <a href="#">
-                                             <img src="img/taxi/taxi3.png" width="70px"> Plus <p class="i">6 seats<i class="pull-right">3 min</i></p>
+                                             <img  class="imagen" src="img/taxi/taxi3.png" width="70px">  <p class="i">Plus  <br>6 seats<i class="pull-right">3 min</i></p>
                                          </a>
                                       </li>
                                       <li value="3">
                                          <a href="#">
-                                             <img src="img/taxi/taxi4.png" width="70px"> Premier <p class="i">High-end, 4 seats<i class="pull-right">3 min</i></p>
+                                             <img  class="imagen" src="img/taxi/taxi4.png" width="70px"> <p class="i">Premier  <br>High-end, 4 seats<i class="pull-right">3 min</i></p>
                                          </a>
                                       </li>
                                  </ul>
@@ -55,9 +58,10 @@
                      </div>
                  </div>
             </div>
-                 <input onclick="validateList()" type="button" id="botonn" value="Set Pickup">
+                <a href="mapa-2.html"><button id="botonn" style = "font-size:18px"><strong>Set Pickup</strong></button></a>
         </div>
  <script src="js/mapas.js"></script>
+  <script src="js/init.js"></script>
  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbtyWl05NvDhbN6ZoZWmc1DO4v8oMMR_o&callback=initMap"></script>
 </body>
 <script type="text/javascript" src="js/jquery.js"></script>
