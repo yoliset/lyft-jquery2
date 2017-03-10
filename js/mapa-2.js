@@ -49,16 +49,54 @@ function initMap() {
     icon: "img/car3.png"
   });
 }
-
-$(document).ready();
-
 function init(){
-     solicitarEstimado();
-   }
+    solicitarEstimado();
+var carrosLyft = [
+  
+  {
+      "nombre": "Lyft", 
+      "imagen":"img/taxi/taxi1.png",
+      "minimo":"3 min",
+      "letra":"Fast ride 4 seats"},
+  {
+      "nombre": "Lyft", 
+      "imagen":"img/taxi/taxi2.png",
+      "minimo":"3 min",
+      "letra":"4 seats"},
+  {
+      "nombre": "Plus",
+      "minimo":"3 min",
+      "imagen":"img/taxi/taxi3.png", 
+      "letra":"6 seats"},
+
+  {
+      "nombre": "Premier",
+      "minimo":"3 min",
+      "imagen":"img/taxi/taxi4.png", 
+      "letra":"High-end 4 seats"}
+  ];
+
+
+    var imagenCar = $('#carrito');
+    var locStore =  $('#titulos');
+    var small =  $('#letritas');
+    
+    var guardarCar = localStorage.getItem('guardarCar');
+    
+    var carImg=carrosLyft[guardarCar].imagen;
+    var carTitulo=carrosLyft[guardarCar].nombre;
+    var carLetras=carrosLyft[guardarCar].letra;
+    
+    imagenCar.attr("src",carImg);
+    locStore.text(carTitulo);
+    small.text(carLetras);
+}
+
+
 function solicitarEstimado(){
     $.ajax ({
         url:"http://clientes.geekadvice.pe/api/estimado",
-     data:{tipo:"1"}
+     data:{"tipo":1}
     }).success(function(_data){
         console.log(_data.estimado);
         update(_data);
@@ -68,5 +106,7 @@ function solicitarEstimado(){
 function update(_info){
    $('#orige').text(_info.origen);
    $('#destin').text(_info.destino);
+   $('#estimo').text(_info.estimado.min); 
+   $('#pre').html(_info.estimado.moneda);
    
 }

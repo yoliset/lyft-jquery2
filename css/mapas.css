@@ -61,19 +61,27 @@
 img{
     width: 50px;
 }
-.i{
-   padding-left: 52px;
+h5{
+    padding-left: 52px;
     position: relative;
-    top: -5px;
+    top: -25px;
     color: teal;
     font-size: 12px;
+    width: 210px;
+    height: 8px;
+}
+small{
+    position:relative;
+    top: -40px;
+    left: 50px;
+}
+.pull-right{
+    position: relative;
+    top: -61px;
 }
 .input-group-addon{
     background-color: white;
     border-radius: 18px;
-}
-p{
-    width: 210px;
 }
 .letra{
     font-size: 14px;

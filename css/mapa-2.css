@@ -16,6 +16,13 @@
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
 }
+i{
+    display: inline-block;
+}
+#estimo{
+    display: inline-block;
+    padding-left: 10px;
+}
 .panel-body {
     background-color: #f1f1f3;
 }

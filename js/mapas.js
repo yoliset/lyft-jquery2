@@ -52,6 +52,68 @@ function initMap() {
 }
 
 
+var carrosLyft = [
+  
+  {
+      "nombre": "Lyft", 
+      "imagen":"img/taxi/taxi1.png",
+      "minimo":"3 min",
+      "letra":"Fast ride 4 seats"},
+  {
+      "nombre": "Lyft", 
+      "imagen":"img/taxi/taxi2.png",
+      "minimo":"3 min",
+      "letra":"4 seats"},
+  {
+      "nombre": "Plus",
+      "minimo":"3 min",
+      "imagen":"img/taxi/taxi3.png", 
+      "letra":"6 seats"},
+
+  {
+      "nombre": "Premier",
+      "minimo":"3 min",
+      "imagen":"img/taxi/taxi4.png", 
+      "letra":"High-end 4 seats"}
+  ];
+    function listas(){
+        
+    
+    var lista = $('#lista');
+    for(var i in carrosLyft )
+    {
+           var html= '<li id="'+i+'"><a><img src="'+ carrosLyft[i].imagen+'" style= width: 70px; alt="" class="imagen"></img><h5>'+ carrosLyft[i].nombre+'</h5> <br><small>'+carrosLyft[i].letra+'</small><i class = "pull-right">'+carrosLyft[i].minimo+'</i></a></li>';
+        
+           lista.append(html); 
+    }
+        }
+function onclick(evt){
+       console.log(evt.currentTarget);
+       localStorage.setItem('guardarCar', evt.currentTarget.id);
+}
+
+function init(){
+    solicitarEstimado();
+    listas();
+    
+    var list=$('li');
+       for ( var i=0; i < list.length; i++){
+        list[i].addEventListener("click" , onclick);
+    }
+   }
+function solicitarEstimado(){
+    $.ajax ({
+        url:"http://clientes.geekadvice.pe/api/estimado",
+     data:{tipo:"1"}
+    }).success(function(_data){
+        console.log(_data.estimado);
+        update(_data);
+    });
+} 
+
+function update(_info){
+   $('#origen').text(_info.origen);  
+}
  
 
 

@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <title>Lyft</title>
-  
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
   <link rel="stylesheet" href="icons/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/mapas.css">
-    <title>Mapas</title>
 </head>
-<body>
+<body onload="init()">
     <div id="map"></div>
         <img id="chica" src="img/chica.jpg" alt=""> 
         <img id="lyftt" src="img/lyft-logo.png" alt=""> 
@@ -28,6 +24,7 @@
                                       <span class="sr-only">Desplegar menú</span>
                                  </button>
                                 <ul id="lista" class="dropdown-menu pull-left">
+                                    <!-- 
                                      <li value="0">
                                          <a href="#">
                                              <img  class="imagen" src="img/taxi/taxi1.png" width="70px"> 
@@ -36,34 +33,37 @@
                                       </li>
                                       <li value="1">
                                          <a href="#">
-                                             <img  class="imagen" src="img/taxi/taxi2.png" width="70px"> <p class="i">Lyft <br>4 seats<i class="pull-right">3 min</i></p>
+                                             <img  class="imagen" src="img/taxi/taxi2.png" width="70px">
+                                             <h5>Lyft<br><small>4 seats</small></h5><i class="pull-right">3 min</i> 
                                          </a>
                                       </li>
                                       <li value="2">
                                          <a href="#">
-                                             <img  class="imagen" src="img/taxi/taxi3.png" width="70px">  <p class="i">Plus  <br>6 seats<i class="pull-right">3 min</i></p>
+                                             <img  class="imagen" src="img/taxi/taxi3.png" width="70px">
+                                             <h5>Plus<br><small>6 seats</small></h5><i class="pull-right">3 min</i>  
                                          </a>
                                       </li>
                                       <li value="3">
                                          <a href="#">
-                                             <img  class="imagen" src="img/taxi/taxi4.png" width="70px"> <p class="i">Premier  <br>High-end, 4 seats<i class="pull-right">3 min</i></p>
+                                             <img  class="imagen" src="img/taxi/taxi4.png" width="70px"> 
+                                              <h5>Premier<br><small>High-end, 4 seats</small></h5><i class="pull-right">3 min</i> 
                                          </a>
-                                      </li>
+                                      </li>  -->
                                  </ul>
                          </div>
                      </div>
                         <div class="col-md-11 col-xs-10">
-                                 <h4>2300 Harrison St <p class="letra">Pickup Location</p></h4>     
+                                 <h4 id="origen">2300 Harrison St <br> <small>Pickup Location</small></h4>     
                         </div> 
                      </div>
                  </div>
             </div>
                 <a href="mapa-2.html"><button id="botonn" style = "font-size:18px"><strong>Set Pickup</strong></button></a>
         </div>
- <script src="js/mapas.js"></script>
-  <script src="js/init.js"></script>
- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbtyWl05NvDhbN6ZoZWmc1DO4v8oMMR_o&callback=initMap"></script>
+ <script type="text/javascript" src="js/mapas.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbtyWl05NvDhbN6ZoZWmc1DO4v8oMMR_o&callback=initMap"></script>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </html>
