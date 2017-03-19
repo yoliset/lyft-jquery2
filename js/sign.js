@@ -1,29 +1,23 @@
 $(document).ready(function(){
    $("#botonn").click(function(evento){
-      validarNombre();
-      validarCorreo();
-     validarAmbos();
+      validarTodo();
    });
 });
-    function validarNombre(){
-        var name = $('#name').val();
-      if(/^[a-zA-Z]+$/.test(name)===false){
-        alert("Incorrecto, Coloca tu nombre");
-      }
-}
-    function validarCorreo(){ 
+   
+function validarLocal(){
+     var namer = $('#name').val();
+    localStorage.setItem("name", namer);
     var correo= $('#email').val();
-    if (/^\S+@\S+\.\S+$/.test(correo) ===false){
-        alert("Incorrecto, Coloca tu email");
+    localStorage.setItem("email", correo);   
+}
+function validarTodo(){
+     var namer = $('#name').val();
+     var correo= $('#email').val();
+    if ((/^[a-zA-Z]+$/.test(namer)==true)&&(/^\S+@\S+\.\S+$/.test(correo)==true)){
+      window.location.href = 'mapas.html';
+       validarLocal();
+    }else{
+        alert("LLenar los campos,correctamente");
     }
 }
-    function validarAmbos(){
-        var name = $('#name').val();
-        var correo= $('#email').val();
-    if(/^[a-zA-Z]+$/.test(name)===false || /^\S+@\S+\.\S+$/.test(correo) ===false){
-        alert("Llenar correctamente");
-        
-    } else {
-        window.location.href = 'mapas.html';
-    }
-}
+
