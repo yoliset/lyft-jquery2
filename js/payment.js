@@ -26,7 +26,7 @@ function update(_info){
 }
 function solicitarEstimado(){
     $.ajax ({
-        url:"http://clientes.geekadvice.pe/api/estimado",
+        url:"https://clientes.geekadvice.pe/api/estimado",
      data:{"tipo":1}
     }).success(function(_data){
         console.log(_data.estimado);
